@@ -11,11 +11,11 @@
       <nav>
         <ul>
           <li class="logo">RaineLaing<span class="period">.</span><span class="underscore">_</span></li>
-          <li ><a href="#home">//home</a></li>
-          <li><a href= "#myskills">//skills</a></li>
-          <li><a href="#projects">//projects</a></li>
-          <li><a href="#musings">//musings</a></li>
-          <li><a href="#contact">//contact</a></li>
+          <li ><a href="#home">// home<sup>01</sup></a></li>
+          <li><a href= "#myskills">//skills<sup>01</a></li>
+          <li><a href="#projects">//projects<sup>01</a></li>
+          <li><a href="./musings.html" active>//musings<sup>01</a></li>
+          <li><a href="./contact.html">// contact<sup>01</a></li>
         </ul>
       </nav> 
       </ul>
@@ -25,14 +25,16 @@
 <section id="home">
   <div class="hero"></div>
   <div class="container">
+    <div>
 <h1 class="name">RAINE LAING</h1>
 <p class="job-title">FRONT END DEVELOPER</FRONT> + CREATIVE PROBLEM SOLVER. </p>
+
 </div>
 </section>
 
     <!-- skills -->
     <section id="myskills">
-    <h1 class="skills-title">Skills</h1>
+    <h1 class="skills-title">//skills</h1>
       <table>
         <tr>
           <th><img src="../images/reactlogo.png" width="50px" alt=""><h3>Front End Development</h3> </th>
@@ -43,9 +45,8 @@
           <td> <button class="skills-button">HTML</button
             ><button class="skills-button">CSS</button
             ><button class="skills-button">BOOTSTRAP</button>
-              <button class="skills-button">JAVASCRIPT</button
-                
-            ><button class="skills-button">REACT</button></td>
+              <button class="skills-button">JAVASCRIPT</button>
+              <button class="skills-button">REACT</button></td>
           <td>I enjoy creating functional products based on solid UX/UI principles. </td>
         </tr>
       </table>
@@ -55,7 +56,7 @@
     <section id="projects">
       <div class="project-container"> 
         <div>
-      <h1 class="projects-title">Projects</h1>
+      <h1 class="projects-title">//projects</h1>
       <p class="project-intro"> Here are some projects that I have created using HTML, CSS, REACT & Bootstrap.
       </p>
     </div>
@@ -64,30 +65,23 @@
 <ul class="accordian">
   <li>
     <input type="radio" name="accordian" id="tab-one" checked>
-    <label for="tab-one">A Weather App</label>
+    <label for="tab-one">Weather App</label>
     <div class="project-description">
-  <img src="./images/weatherappicon.jpeg" alt="Tic tac toe App">
+  <img src="./images/weatherappicon.jpeg"  class= "project-image"alt="Tic tac toe App" width="300px"; height="200px">
   </div>
   </li>
   <li>
     <input type="radio" name="accordian" id="tab-two">
     <label for="tab-two">Tic Tac Toe</label>
     <div class="project-description">
-   <img src="./images/tictactoeicon.jpeg" alt="Weather App">
+   <img src="./images/tictactoeicon.jpeg" class= "project-image"alt="Weather App" width="300px"; height="200px">
   </div>
   </li>
   <li>
     <input type="radio" name="accordian" id="tab-three">
     <label for="tab-three">Calculator</label>
     <div class="project-description">
-  <img src="./images/calculatorappicon.jpeg" alt="Calculator App">
-  </div>
-  </li>
-  <li>
-    <input type="radio" name="accordian" id="tab-four">
-    <label for="tab-four">Rainelaing.dev</label>
-    <div class="project-description">
-   <img src="./images/rainelaingdev.png" alt="Raine Laing Website" width="400px"; height="200px">
+  <img src="./images/calculatorappicon.jpeg" class= "project-image" alt="Calculator App" width="300px"; height="200px">
   </div>
   </li>
 </ul>
@@ -96,22 +90,48 @@
 <img  src="./images/reactlogo.png" alt="React Logo" width="100px">
 <img src="./images/bootstrap-logo.png" alt="Bootstrap Logo" width="90px">
 <img src="./images/java-scriptlogo.png" alt="Javascript Logo" width="80px">
+
 </div>
+<a href="./allproject.html"><button>VIEW ALL PROJECTS</button></a>
+
 </section>
 
-   <!--Call to action-->
-   <section id="call">
+<!--Contact form begins-->
+<section id="contact">
+<div class="form-container">
+  <div class="div">
     <h1 class="call-title">LET'S TALK</h1>
-    <p>rainelaingdev@gmail.com</p>
-    <div class="social-icons">
-      <img  src="./images/github.png" alt="Github Icon" class="github-icon"> 
-      <img  src="./images/linkedin-logo.png" alt="Linkedin Logo" class="linkedin-icon">
-    </div>
-    </section>
+    <p class="email-address">rainelaingdev@gmail.com</p>
+
+    <a href="https://github.com/"> 
+      <img src="./images/github.png" alt="Github Icon" class="github-icon social-icons"> 
+    </a> 
+      <a href="https://www.linkedin.com/in/raine-laing-844bb6333/">
+        <img src="./images/linkedin-logo.png" alt="Linkedin Logo" class="linkedin-icon social-icons"> 
+      </a>
+</div>
+   
+<div class="contact-box">
+<form action="">
+  <input type="text" name="name" class="input-field" placeholder="Name">
+  <input type="email" name="email" class="input-field"  placeholder="Email">
+  <textarea name="message" id="message" class="textarea-field" placeholder="Message"></textarea><br>
+<button>Send</button>
+</form>
+</div>
+</div>
+  </section>
+
+
+
+
+
 
       <!--Footer-->
 <footer>
   <p> Raine Laing Dev 2024&#169</p>
+  
+
 </footer>
 
      

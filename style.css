@@ -11,17 +11,18 @@
 }
 body,
 html {
-  margin:0;
+  margin: 0;
   color: rgb(238, 238, 238);
   font-family: "Anonymous Pro", monospace;
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  background-color:rgb(35, 35, 35);
-
-
-
-
+  background-color: rgb(35, 35, 35);
+}
+hr{
+height:6px;
+border: none;
+background-color:#ffffff;
 }
 
 * {
@@ -30,14 +31,23 @@ html {
   padding: 0;
 }
 
+/* Home css begins  */
+#home {
+  margin-bottom: 100px;
+}
+
+sup{
+  font-size: xx-small;
+  position: relative;
+  top:-10px;
+}
 .logo {
   color: aqua;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   width: 35rem;
   font-family: "Anonymous Pro", monospace;
   font-weight: 700;
   font-style: normal;
-  padding-right: 3rem;
 
 }
 
@@ -65,7 +75,7 @@ nav a {
   font-family: "Anonymous Pro", monospace;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 nav a:link {
   color: #eaeaea;
@@ -84,10 +94,9 @@ nav a:hover {
 }
 
 .name {
-
-  position:absolute;
+  position: absolute;
   top: 300px;
-  right: 280px;
+  right: 420px;
   z-index: 4;
   color: rgb(255, 255, 255);
   font-size: 6.5rem;
@@ -97,100 +106,59 @@ nav a:hover {
 }
 
 .job-title {
- 
   position: absolute;
   top: 450px;
+  right: 475px;
   z-index: 4;
   color: white;
   font-family: "poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
   font-size: 1.3rem;
- 
 
 }
-
-/* css for arrow*/
-
-.skills-title {
-  color:white;
-  text-align: center;
-  font-size: 4rem;
-  font-family: "poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  padding-bottom: 50px;
-  padding-top: 95px;
-}
-.projects-title {
-  color:white;
-  text-align: start;
-  font-size: 4rem;
-  font-family: "poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  margin-left: 125px;
-
-}
-.call-title {
-  margin-top: 50px;
-  padding-top: 200px;
-  color:white;
-  text-align: center;
-  font-size: 4rem;
-  font-family: "poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-
-
-
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  background-image: url("./images/codingrainecloud-remove-background.com.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top -20px;
+  opacity: 80%;
+  padding-top: 100px;
 }
 
-.hero{
-position:relative;
-z-index: 1;
-min-height: 100vh;
-background-image: url("./images/codingrainecloud-remove-background.com.png");
-background-repeat: no-repeat;
-background-size:contain;
-background-position:center top -20px;
-opacity: 80%;
-padding-top:100px;
-
-
+/* Skills css begins   */
+td{
+  font-size: 1.2rem;
 }
 
-#myskills{
-  background-color:rgb(35,35, 35);
+#myskills {
+  background-color: rgb(35, 35, 35);
   padding-bottom: 300px;
   padding-top: 100px;
 }
 
-#home{
-margin-bottom: 100px;
 
+th:first-child{
+  text-decoration: underline 6px rgb(152, 54, 208);
 }
-#call{
-  padding-top: 80px;
-  background:radial-gradient(circle at -8.9% 51.2%, rgb(103, 99, 99) 0%, rgb(35, 35, 35) 15.9%, rgb(40, 40, 40) 15.9%, rgb(40, 40, 40) 24.4%, rgb(35, 35, 35) 24.5%, rgb(35, 35, 35) 66%);
-  min-height: 100vh;
-
+th:last-child{
+  text-decoration: underline 6px palevioletred;
 }
-  #call p{                                                                  
-    color:#ea8496;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: "poppins", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
+.colourful-cloud {
+  margin-left: 1000px;
+  margin-top: -45px;
+  position: absolute;
+  z-index: 1;
+  opacity: 60%;
+}
 
-/* css for projects.html*/
-/* project-page */
 .skills-button {
   background-color: rgb(110, 108, 108);
   border-radius: 16px;
-  border:none;
+  border: none;
   font-family: "poppins", sans-serif;
   color: rgb(238, 238, 238);
   padding: 7px;
@@ -198,12 +166,11 @@ margin-bottom: 100px;
   margin: 0.3125rem;
 }
 
-
-table, th, td {
-  border: 1px solid;
+table,
+th,
+td {
+  border: 6px solid;
   margin: 0 auto;
-
- 
 }
 
 table {
@@ -213,138 +180,340 @@ table {
   width: 75%;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
 }
-.project-container{
+.skills-title {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-bottom: 50px;
+  padding-top: 95px;
+}
+
+/* Project css begins */
+
+#projects button{
+
+ margin-top: 25px;
+ width: 150px;
+ height: 50px;
+ border: none;
+ border-radius: 3px;
+ cursor: pointer;
+ background-color:rgb(152, 54, 208);
+ color: #eaeaea;
+ font-family: "poppins", sans-serif;
+}
+
+.projects-title {
+  color: white;
+  text-align: start;
+  font-size: 4rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 125px;
+}
+#projects p{
+  font-size: 1.2rem;
+}
+
+.project-container {
   display: flex;
   gap: 50px;
   margin-right: 50px;
 }
-.project-list{
+.project-list {
   padding-top: 100px;
   margin-right: 100px;
 }
 
-
-.accordian{
-margin-left: 0;
+.accordian {
+  margin-left: 0;
 }
 
-.accordian li{
+.accordian li {
   list-style: none;
-  border: 1px solid white;
+  border: 6px solid white;
   width: 100%;
   padding: 10px;
-
 }
-.accordian li label{
+.accordian li label {
   display: flex;
   align-items: center;
-  cursor:pointer;
-  font-size: 1.2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: "poppins", sans-serif;
 
 }
-label::before{
+label::before {
   content: "+";
   margin-right: 10px;
-  font-size:24px;
-  font-weight:400;
-
+  font-size: 24px;
+  font-weight: 400;
 }
-.accordian input[type="radio"]:checked + label + .project-description{
+.accordian input[type="radio"]:checked + label + .project-description {
   max-height: 400px;
   padding: 10px 10px 20px;
-
 }
-.accordian .project-description{
-  color:purple;
+.accordian .project-description {
+  color: purple;
   padding: 0 10px;
-  line-height:26px;
+  line-height: 26px;
   max-height: 0;
-  overflow:hidden;
+  overflow: hidden;
   transition: max-height 0.5s, padding 0.5s;
 }
-input[type="radio"]{
+
+input[type="radio"] {
   display: none;
 }
-.accordian input[type="radio"]:checked + label::before{
-
- content: "-"
+.accordian input[type="radio"]:checked + label::before {
+  content: "-";
 }
-#projects{
+#projects {
   padding-top: 80px;
-
- 
 }
- .project-intro{
- margin-left: 125px;
-}
-.colourful-cloud{
-  margin-left: 600px;
-  margin-top: -45px;
-  position:absolute;
-  z-index: 1;
-  opacity: 60%
-  
-}
-footer{
-margin: 0 auto;
-padding-top: 400px;
-}
-footer p{
-  text-align: center;
-  font: size 1rem;
+.project-intro {
+  margin-left: 125px;
 }
 
-
-
-.rotate img{
+.rotate img {
   animation-name: rotate;
-  animation-duration:2s;
+  animation-duration: 2s;
   animation-delay: 0s;
   animation-iteration-count: infinite;
-  animation-timing-function:linear;
+  animation-timing-function: linear;
   transform: rotateY(45deg);
 }
 
 @keyframes rotate {
-  from{transform: rotateY(45deg);}
-  to{transform: rotateY(225deg);}
-  
+  from {
+    transform: rotateY(45deg);
+  }
+  to {
+    transform: rotateY(225deg);
+  }
 }
 
-.logos{
-  position:absolute;
-  bottom:-1340px;
-  left:100px;
+/* Call to action css begins */
+
+.call-title {
+  margin-top: 50px;
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
-.social-icons{
-margin-left:500px;
-  margin-top:80px;
-  gap:15px;
-  width: 50px;
-  height: 50px;
+
+
+
+
+/*  Contact form begins */
+.contact-page-title{
+text-align: center;
+margin-top: 200px;
+margin-bottom: 75px;
+color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#contact{
+  margin-top: 200px;
+  background: radial-gradient(
+    circle at -8.9% 51.2%,
+    rgb(103, 99, 99) 0%,
+    rgb(35, 35, 35) 15.9%,
+    rgb(40, 40, 40) 15.9%,
+    rgb(40, 40, 40) 24.4%,
+    rgb(35, 35, 35) 24.5%,
+    rgb(35, 35, 35) 66%
+  );
+  min-height: 100vh;
+}
+
+.form-container{
+  display: flex;
+  margin-left:200px;
+}
+.input-field{
+  width:400px;
+  height:40px;
+  margin: 20px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-bottom: 3px rgb(255, 255, 255) solid;
+  background-color: rgb(35, 35, 35);
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+ .textarea-field{
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  width:400px;
+  height:40px;
+  border:none;
+  border-bottom: 3px rgb(255, 255, 255) solid;
+  background-color: rgb(35, 35, 35);
+  color:#ffffff;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+
+ }
+.contact-box{
+  width:500px;
+  height: 400px;
+  background-color: rgb(35, 35, 35);
+  margin: 150px auto;
+}
+
+
+.email-address{
+  color: #ea8496;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.contact-box button{
+  font-size: 1.2rem;
+  background-color: rgb(35, 35, 35);
+  position:relative;
+  right: -355px;
+  color: #ea8496;
+  border: none;
+  cursor: pointer;
+}
+
+.logos {
+  position: absolute;
+  bottom: -1340px;
+  left: 200px;
+}
+
+.social-icons {
+  margin-left: 55px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  gap: 15px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+.linkedin-icon {
+  transition: 0.2s ease-in-out 0s;
+}
+.linkedin-icon:hover {
+  transform: scale(1.5);
+}
+.github-icon {
+  transition: 0.2s ease-in-out 0s;
+}
+.github-icon:hover {
+  transform: scale(1.5);
+}
+
+/* Footer css begins */
+
+footer {
+  margin: -600px auto;
+
+
+}
+footer p {
+  padding-top: 500px;
+  text-align: center;
+  font-size:  .9rem;
+}
+
+
+
+/* All Projects css */
+#all-projects{
+  margin-top: 200px;
+}
+#all-projects h1{
+text-align: center;
+margin-bottom: 200px;
+color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  }
+  
+#all-projects h2{
+margin-left: 320px;
+}
+
+
+.all-projects-container{
+  font-size: 1.2rem;;
   display:flex;
-  cursor:pointer;
+  align-items: center;
+  margin: 0 auto;
+  width: 800px;
+  gap: 100px;
+}
 
-  
+/* Musings page begins */
+
+.musing-title{
+color: rgb(255, 255, 255);
+text-align: center;
+font-size: 4rem;
+font-family: "poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+margin-left: 125px;
+margin-top: 200px;
+
 }
-.linkedin-icon{
-  transition: .2s ease-in-out 0s;
-  
+
+.blog-description{
+  width: 800px;
+  margin: 100px auto; 
 }
-.linkedin-icon:hover{
-  transform: scale(1.4);
-  
+#musings h3{
+font-family: "poppins", sans-serif;
+font-weight: 600;
+font-style: normal;
+font-size: 1.5rem;
+color: rgb(255, 255, 255);
+padding-bottom: 30px;
+padding-top: 10px;
 }
-.github-icon{
-  transition: .2s ease-in-out 0s;
-  
+#musings img{
+
+  margin-left: 150px;
 }
-.github-icon:hover{
-  transform: scale(1.4);
-  
+.musing-description{
+  color: #ea8496;
+  font-size: 1.2rem;
+}
+
+#musings{
+  padding-bottom: 150px;
 }
