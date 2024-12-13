@@ -44,6 +44,7 @@ sup{
 }
 .logo {
   color: aqua;
+  margin-right: 3rem;
   font-size: 1.8rem;
   width: 35rem;
   font-family: "Anonymous Pro", monospace;
@@ -52,8 +53,11 @@ sup{
 
 }
 
+
+
+
 nav {
-  z-index: 9999;
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 100px;
@@ -98,8 +102,8 @@ nav a:hover {
 .name {
   position: absolute;
   top: 300px;
-  right: 525px;
-  z-index: 4;
+  right: 375px;
+  z-index: 1;
   color: rgb(255, 255, 255);
   font-size: 6.5rem;
   font-family: "poppins", sans-serif;
@@ -110,8 +114,8 @@ nav a:hover {
 .job-title {
   position: absolute;
   top: 450px;
-  right: 585px;
-  z-index: 4;
+  right: 415px;
+  z-index: 1;
   color: white;
   font-family: "poppins", sans-serif;
   font-weight: 200;
